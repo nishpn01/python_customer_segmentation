@@ -68,7 +68,7 @@ Initial exploration focuses on understanding the distribution of our primary met
 ![](visualization/count_annual_income.png)
 
 ![](visualization/count_spending_score.png)
-*[Notebook Reference: Generated from the `sns.displot(df[i], kde=True)` loop in the Univariate EDA section]*
+ *[Notebook Reference: Generated from the `sns.displot(df[i], kde=True)` loop in the Univariate EDA section]*
 
 ![](visualization/boxplot_gender_age.png)
 
@@ -136,7 +136,7 @@ Based on the multivariate profiles, the following marketing actions are recommen
 - **Seaborn & Matplotlib:** Advanced multivariate visualization and density plotting.
 - **VS Code:** Integrated development environment.
 ## Project Links
-- [Strategic Growth Report - Executive Summary](https://beta.eden.so/public-access/item/d5712f98-12ab-43b7-b69d-2626609acc55)
+- [Strategic Growth Report - Executive Report](https://beta.eden.so/public-access/item/d5712f98-12ab-43b7-b69d-2626609acc55)
 - [Final Labeled Dataset (CSV)](Delivarables/Strategic_Customer_Segmentation_Final.csv)
 
 **Technical Note:** This project demonstrates the ability to translate raw data into a structured machine learning pipeline and eventually into an actionable, high-level business strategy.
