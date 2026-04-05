@@ -68,14 +68,14 @@ Initial exploration focuses on understanding the distribution of our primary met
 ![](visualization/count_annual_income.png)
 
 ![](visualization/count_spending_score.png)
-  *[Notebook Reference: Generated from the `sns.displot(df[i], kde=True)` loop in the Univariate EDA section]*
+ *[Notebook Reference: Generated from the `sns.displot(df[i], kde=True)` loop in the Univariate EDA section]*
 
 ![](visualization/boxplot_gender_age.png)
 
 ![](visualization/boxplot_gender_income.png)
 
 ![](visualization/boxplot_gender_spending_score.png)
-*[Notebook Reference: Generated from the `sns.boxplot(data=df, x='Gender', y=df[i])` loop]*
+<br>*[Notebook Reference: Generated from the `sns.boxplot(data=df, x='Gender', y=df[i])` loop]*
 ### Step 2: Demographic Density Analysis (The Demographic Myth)
 To prove that broad demographics are insufficient for targeting, we overlay gender on our density plots.
 
@@ -84,40 +84,40 @@ To prove that broad demographics are insufficient for targeting, we overlay gend
 ![](visualization/gender_income_density.png)
 
 ![](visualization/gender_spending_score_density.png)
-*[Notebook Reference: Generated from the `sns.kdeplot(data=df, x=i, hue='Gender', fill=True, shade=True)` loop]*
+<br>*[Notebook Reference: Generated from the `sns.kdeplot(data=df, x=i, hue='Gender', fill=True, shade=True)` loop]*
 
 **Insights:** While Income and Age are relatively consistent across genders, the Spending Score shows a definitive rightward shift for Female shoppers, indicating higher engagement potential.
 ### Step 3: Correlation & Bivariate Mapping
 We then examine the intersection of metrics to find natural relationships and visual clusters.
 
 ![](visualization/heatmap_corr_matrix.png)
-*[Notebook Reference: Generated from the `sns.heatmap` cell]*
+<br>*[Notebook Reference: Generated from the `sns.heatmap` cell]*
 
 ![](visualization/pairplot_across.png)
-*[Notebook Reference: Generated from the `sns.pairplot(df_pair, hue='Gender')` cell]*
+<br>*[Notebook Reference: Generated from the `sns.pairplot(df_pair, hue='Gender')` cell]*
 
 ![](visualization/splot_income_spending.png)
-*[Notebook Reference: Generated from the `sns.scatterplot` cell identifying visual clusters]*
+<br>*[Notebook Reference: Generated from the `sns.scatterplot` cell identifying visual clusters]*
 
 **Insights:** The Bivariate scatter clearly shows natural grouping, suggesting the market naturally breaks into distinct quadrants (e.g., High Income/Low Spend vs. High Income/High Spend).
 ### Step 4: Mathematical Validation (The Elbow Method)
 To avoid over-fitting or under-segmenting the market, mathematical optimization (WCSS) was tracked as dimensions were added.
 
 ![](visualization/kmeans1_elbow.png)
-*[Notebook Reference: Generated from the Univariate Income Elbow loop]*
+<br>*[Notebook Reference: Generated from the Univariate Income Elbow loop]*
 
 ![](visualization/kmeans2_elbow.png)
-*[Notebook Reference: Generated from the Bivariate Income/Spend Elbow loop]*
+<br>*[Notebook Reference: Generated from the Bivariate Income/Spend Elbow loop]*
 
 ![](visualization/kmeans3_elbow.png)
-*[Notebook Reference: Generated from the Multivariate Elbow loop `kmeans3.fit(dff_scaled)`]*
+<br>*[Notebook Reference: Generated from the Multivariate Elbow loop `kmeans3.fit(dff_scaled)`]*
 
 **Insights:** The Elbow plots demonstrate how adding dimensions shifts the optimal cluster count. The final multivariate Elbow confirms $K=5$ as the optimal partition.
 ### Step 5: Final Segment Map
 The final step visualizes the resulting personas and their mathematical centers.
 
 ![](visualization/splot_cx_segments.png)
-*[Notebook Reference: Generated from the `sns.scatterplot` cell extracting `clustering2.cluster_centers_`]*
+<br>*[Notebook Reference: Generated from the `sns.scatterplot` cell extracting `clustering2.cluster_centers_`]*
 
 **Insights:** The algorithm successfully partitions the market. The "Splurge Shoppers" and "Primary Targets" represent the highest ROI, while the "Untapped Wealth" represents the largest revenue leak.
 ## Major Discoveries & Strategic Insights
