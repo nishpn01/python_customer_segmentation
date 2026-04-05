@@ -68,7 +68,7 @@ Initial exploration focuses on understanding the distribution of our primary met
 ![](visualization/count_annual_income.png)
 
 ![](visualization/count_spending_score.png)
- *[Notebook Reference: Generated from the `sns.displot(df[i], kde=True)` loop in the Univariate EDA section]*
+<br>*[Notebook Reference: Generated from the `sns.displot(df[i], kde=True)` loop in the Univariate EDA section]*
 
 ![](visualization/boxplot_gender_age.png)
 
