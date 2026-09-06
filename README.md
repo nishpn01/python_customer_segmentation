@@ -229,11 +229,11 @@ The multivariate elbow curve supported K = 5 as the working model choice for thi
 elbow method does not prove that five permanent customer types exist, and no other cluster
 quality measure was used for final selection.
 
-### Step 5: Final Segment Map
+### Step 5: Income + Spending Score Baseline Map
 
-This scatter plot visualizes the final cluster assignments and the model's center markers. It
-is a visual summary of the observed sample, not evidence of customer motivations or future
-commercial outcomes.
+This plot shows the earlier bivariate clustering step using Annual Income and Spending Score.
+It is useful for visualizing the two-dimensional baseline, but it is not the final
+four-variable segmentation.
 
 ![](visualization/splot_cx_segments.png)
 
